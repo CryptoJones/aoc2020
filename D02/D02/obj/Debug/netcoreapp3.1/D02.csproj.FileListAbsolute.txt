@@ -1,0 +1,13 @@
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.exe
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.deps.json
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.runtimeconfig.json
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.runtimeconfig.dev.json
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.dll
+C:\Users\akclark\source\repos\aoc2020\D02\D02\bin\Debug\netcoreapp3.1\D02.pdb
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.csprojAssemblyReference.cache
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.AssemblyInfoInputs.cache
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.AssemblyInfo.cs
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.csproj.CoreCompileInputs.cache
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.dll
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.pdb
+C:\Users\akclark\source\repos\aoc2020\D02\D02\obj\Debug\netcoreapp3.1\D02.genruntimeconfig.cache

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
+using System.Globalization;
 using System.Text;
 
 namespace D06
@@ -36,29 +37,50 @@ namespace D06
 
         private static int CountYesAnswersPartOne(List<string> lineList)
         {
-            int lineCount = lineList.Count;
             int result = 0;
+            List<List<string>> groups = new List<List<string>>();
+            List<string> buffer = new List<string>();
+            buffer.Clear();
+            
             foreach (string s in lineList)
             {
-                //Console.WriteLine("Line {0} being read", s);
-                //string letters = "abcdefghijklmnopqrstuvwxyz";
-                //int internalCounter = 0;
 
-                //    for (int j = 0; j < 26; j++)
-                //    {
-                //        if (s.Contains(letters[j]))
-                //        {
-                //            internalCounter++;
-                //        }
-                //    }
-                if (s.Length > 0)
+                if (!string.IsNullOrEmpty(s))
                 {
-                    result++;
+                    buffer.Add(s);
                 }
-
+                else
+                {
+                    groups.Add(buffer);
+                    buffer.Clear();
+                   
+                }
                
             }
 
+            int groupCount = groups.Count;
+
+            foreach (List<string> g in groups)
+            {
+                List<char> lettersFound = new List<char>();
+                string letters = "abcdefghijklmnopqrstuvwxyz";
+                
+                for (int i = 0; i < g.Count; i++)
+                {
+                    for (int j = 0; j < letters.Length; j++)
+                        if (g[i].Contains(letters[j]))
+                        {
+                            if (!lettersFound.Contains(letters[j]))
+                            {
+                                lettersFound.Add(letters[j]);
+                            }
+                           
+                        }
+                }
+
+                result = result + lettersFound.Count;
+            }
+            
             return result;
         }
 
